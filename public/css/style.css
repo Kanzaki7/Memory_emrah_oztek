@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.section1 {
+    height: 100%;
+    width: 100%;
+    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animate{
+    0%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg1.jpg);
+    }
+    8.33%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg2.jpg);
+    }
+    16.66%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg3.jpg);
+    }
+    24.99%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg4.jpg);
+    }
+    33.32%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg5.jpg);
+    }
+    41.65%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg6.jpg);
+    }
+    49.98%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg7.jpg);
+    }
+    58.31%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg8.jpg);
+    }
+    66.64%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg9.jpg);
+    }
+    74.97%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg10.jpg);
+    }
+    83.3%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg11.jpg);
+    }
+    100%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg12.jpg);
+    }
+}
+
+
+/* .section1-img2 {
+    height: 100%;
+    width: 100%;
+    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section1-img3 {
+    height: 100%;
+    width: 100%;
+    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section1-img4 {
+    height: 100%;
+    width: 100%;
+    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section1-img5 {
+    height: 100%;
+    width: 100%;
+    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section1-img6 {
+    height: 100%;
+    width: 100%;
+    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/b6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section1-img7 {
+    height: 100%;
+    width: 100%;
+    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section1-img8 {
+    height: 100%;
+    width: 100%;
+    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section1-img9 {
+    height: 100%;
+    width: 100%;
+    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section1-img10 {
+    height: 100%;
+    width: 100%;
+    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section1-img11 {
+    height: 100%;
+    width: 100%;
+    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section1-img12 {
+    height: 100%;
+    width: 100%;
+    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg12.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
