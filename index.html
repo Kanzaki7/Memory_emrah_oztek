@@ -5,27 +5,302 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory De La Muerte</title>
     <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
 <body>
-    <section class="section1">
-        <div>
-
+    <section class="section1" id="section1">
+        <div class="first-div-Sec">
+            <div class="sound"></div>
         </div>
-        <div>
-            <div>
-
-            </div>
-            <div>
-                <div>
-                    Table des scores :
+        <div class="second-div-Sec">
+            <div class="menuWindow">
+                <div class="img-title">
+                    <!-- <img src="" alt=""> -->
                 </div>
                 <div>
-                    <div></div>
-                    <div></div>
+                <div class="table">
+                    <div class="table-title">
+                        Table des scores :
+                    </div>
+                    <div class="table-content">
+                        <div class="table-1row">
+                            <div>Points</div>
+                            <div>Pseudo</div>
+                            <div>Mode de jeu</div>
+                            <div>Temps</div>
+                        </div>
+                        <div class="table-liste"></div>
+                    </div>
+                </div>
+                <div class="secInput">
+                    <div class="name-title">
+                        Nouvelle partie?
+                    </div>
+                    <input type="text" class="name-input" placeholder="Ton pseudo?">
+                </div>
+                <div class="divCartes">
+                    <div class="cartes-title">
+                        Nombre de cartes ?
+                    </div>
+                    <div class="choix-paires">
+                        <div class="paires">3</div>
+                        <div class="paires">4</div>
+                        <div class="paires">5</div>
+                        <div class="paires">6</div>
+                    </div>
+                </div>
+                <div class="divBtnJouer">
+                    <div class="jouer">
+                        <a href="#section2" class="a-jouer">Jouer</a>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="third-div-Sec">
             <div></div>
-            <div></div>
+        </div>
+    </section>
+    <section class="section2" id="section2">
+        <div class="first-div-Sec2">
+            <div class="sound2"></div>
+            <div class="exit">
+                <a href="#section1">
+                    <i class="fa-solid fa-door-open"></i>
+                </a>
+            </div>
+        </div>
+        <div class="second-div-Sec2">
+            <div class="board">
+                <div class="pseudo">pseudo</div>
+                <div>timer</div>
+                <div>paires</div>
+            </div>
+            <div class="menuWindow3">
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu3">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu3">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu3">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu3">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu3">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu3">
+                    </div>
+                </div>
+            </div>
+            <div class="menuWindow4">
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu4">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu4">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu4">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu4">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu4">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu4">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                       <img src="" alt="" class="img-menu4">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu4">
+                    </div>
+                </div>
+            </div>
+            <div class="menuWindow5">
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu5">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu5">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu5">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu5">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu5">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu5">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu5">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu5">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu5">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu5">
+                    </div>
+                </div>
+            </div>
+            <div class="menuWindow6">
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu6">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu6">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu6">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu6">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu6">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu6">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu6">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu6">
+                    </div>
+                </div>
+                <div class="card">  
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu6">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu6">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu6">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back">
+                        <img src="" alt="" class="img-menu6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="third-div-Sec2">
             <div></div>
         </div>
     </section>

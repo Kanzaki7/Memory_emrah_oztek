@@ -6,7 +6,13 @@ body {
     overflow-y: hidden;
 }
 
+/* section 1 */
+
 .section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     height: 100%;
     width: 100%;
     background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg1.jpg);
@@ -63,81 +69,395 @@ body {
     }
 }
 
+.sound {
+    height: 80px;
+    width: 80px;
+    background-color: rgb(131, 6, 227);
+    border-radius: 10px;
+    border: 3px solid white;
+    margin-top: 70px;
+}
 
-/* .section1-img2 {
+.first-div-Sec {
+    width: 16%;
     height: 100%;
-    width: 100%;
-    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
 }
-.section1-img3 {
+.second-div-Sec {
+    width: 68%;
     height: 100%;
-    width: 100%;
-    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
 }
-.section1-img4 {
+.third-div-Sec {
+    width: 16%;
     height: 100%;
-    width: 100%;
-    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-color: red; */
 }
-.section1-img5 {
-    height: 100%;
-    width: 100%;
-    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg5.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.menuWindow {
+    margin-top: 70px;
+    width: 65%;
+    height: 85%;
+    background-color: rgb(131, 6, 227);
+    border-radius: 10px;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-.section1-img6 {
-    height: 100%;
-    width: 100%;
-    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/b6.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.img-title {
+    height: 20%;
+    width: 100px;
 }
-.section1-img7 {
-    height: 100%;
-    width: 100%;
-    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg7.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.table {
+    width: 450px;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
 }
-.section1-img8 {
-    height: 100%;
-    width: 100%;
-    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg8.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.table-title {
+    margin-bottom: 20px;
+    font-size: 28px;
 }
-.section1-img9 {
-    height: 100%;
+
+.table-1row {
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
-    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg9.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    border-bottom: 3px solid white;
+    border-radius: 10px;
 }
-.section1-img10 {
-    height: 100%;
+
+.table-content {
     width: 100%;
-    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg10.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 100px;
+    border: 3px solid white;
+    border-radius: 10px;
 }
-.section1-img11 {
-    height: 100%;
-    width: 100%;
-    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg11.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.secInput {
+    height: 25%;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
 }
-.section1-img12 {
+
+.name-title {
+    font-size: 27px;
+    color: white;
+}
+
+.name-input {
+    width: 45%;
+    height: 65px;
+    border-radius: 15px;
+    border: none;
+    font-size: 25px;
+    outline: none;
+    color: rgb(131, 6, 227);
+}
+.name-input::placeholder {
+    color: rgb(131, 6, 227);
+}
+
+.divCartes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    height: 25%;
+    gap: 5px;
+}
+
+.cartes-title {
+    font-size: 20px;
+    color: white;
+}
+
+.choix-paires {
+    display: flex;
+    gap: 15px;
+    /* background-color: rgb(131, 6, 227);
+    filter: brightness(100px); */
+    width: 160px;
+    height: 30px;
+}
+
+.paires {
+    background-color: rgb(131, 6, 227);
+    width: 25px;
+    height: 25px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+}
+
+.divBtnJouer {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.jouer {
+    background-color: rgb(131, 6, 227);
+    color: white;
+    font-size: 25px;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 160px;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-jouer {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+/* section 2  */
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     height: 100%;
     width: 100%;
-    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg12.jpg);
+    background: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-} */
+    background-position: center;
+    transition: 5s;
+
+    animation-name: animate2;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animate2{
+    0%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg1.jpg);
+    }
+    8.33%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg2.jpg);
+    }
+    16.66%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg3.jpg);
+    }
+    24.99%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg4.jpg);
+    }
+    33.32%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg5.jpg);
+    }
+    41.65%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg6.jpg);
+    }
+    49.98%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg7.jpg);
+    }
+    58.31%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg8.jpg);
+    }
+    66.64%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg9.jpg);
+    }
+    74.97%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg10.jpg);
+    }
+    83.3%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg11.jpg);
+    }
+    100%{
+        background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Backgrounds/bg12.jpg);
+    }
+}
+
+.sound2 {
+    height: 80px;
+    width: 80px;
+    background-color: rgb(131, 6, 227);
+    border-radius: 10px;
+    border: 3px solid white;
+    margin-top: 70px;
+}
+
+.first-div-Sec2 {
+    width: 18%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.second-div-Sec2 {
+    width: 64%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.third-div-Sec2 {
+    width: 18%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.menuWindow3 {
+    width: 100%;
+    height: 80%;
+    /* background-color: rgb(131, 6, 227); */
+    border-radius: 10px;
+    /* border: 3px solid white; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+    flex-wrap: wrap;
+}
+.menuWindow4 {
+    width: 100%;
+    height: 80%;
+    /* background-color: rgb(131, 6, 227); */
+    border-radius: 10px;
+    /* border: 3px solid white; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+.menuWindow5 {
+    width: 100%;
+    height: 80%;
+    /* background-color: rgb(131, 6, 227); */
+    border-radius: 10px;
+    /* border: 3px solid white; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.menuWindow6 {
+    width: 100%;
+    height: 80%;
+    /* background-color: rgb(131, 6, 227); */
+    border-radius: 10px;
+    /* border: 3px solid white; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.exit {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(131, 6, 227);
+    border-radius: 10px;
+    border: 3px solid white;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-door-open {
+    color: white;
+    font-size: 80px;
+}
+
+.board {
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    background-color: rgb(131, 6, 227);
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.card {
+    width: 140px;
+    height: 200px;
+    background-color: rgb(131, 6, 227);
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: all 0.5s;
+}
+
+.card_face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card__face--front {
+    background: rgb(131, 6, 227);
+  }
+
+.card_face--back {
+    /* background-color: white; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg);
+}
+
+.card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.card.matched {
+    transform: translateX(-100%) rotateY(-180deg);
+}
