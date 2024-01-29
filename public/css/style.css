@@ -100,6 +100,13 @@ body {
     height: 65px;   
 }
 
+.bruja {
+    display: none;
+}
+.bruja-active {
+    display: block;
+}
+
 .first-div-Sec {
     width: 16%;
     height: 100%;

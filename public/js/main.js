@@ -1,12 +1,15 @@
 //vidéo utilisée comme référence pour le système de shuffle et de match :
 // https://www.youtube.com/watch?v=M0egyNvsN-Y
 
+
 // déclaration des variables
-let bruja = document.querySelector("#bruja");
-bruja.play();
+
+
+let bruja = document.querySelector(".bruja");
 let mystical = document.querySelector(".mystical");
 // let error = document.querySelector(".error");
 // let interface = document.querySelector(".interface");
+
 
 let section1 = document.querySelector(".section1");
 let section2 = document.querySelector(".section2");
@@ -412,12 +415,10 @@ let sound = document.querySelector(".sound");
 let sound2 = document.querySelector(".sound2");
 
 
-let volume = document.querySelector(".volume-control");
-volume.addEventListener("input", function(e) {
-    bruja.volume = e.currentTarget.value / 100;
-})
+
 sound.addEventListener("click", ()=>{
-    volume.classList.toggle("volume-active");
+    bruja.classList.toggle("bruja-active");
+    bruja.play();
 })
 sound.addEventListener("mouseover", () => {
     sound.classList.toggle("active");
@@ -427,7 +428,8 @@ sound.addEventListener("mouseout", () => {
 })
 
 sound2.addEventListener("click", ()=>{
-    volume.classList.toggle("volume-active");
+    bruja.classList.toggle("bruja-active");
+    bruja.play();
 })
 sound2.addEventListener("mouseover", () => {
     sound2.classList.toggle("active");
