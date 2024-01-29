@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory De La Muerte</title>
+    <title>Memoria De Los Muertos</title>
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
 <body>
+    <audio src="./public/Musique/Page Flip Sound Effect.mp3" class="pageFlip"></audio>
+    <audio src="./public/Musique/success.mp3" class="success"></audio>
+    <audio src="./public/Musique/mystical-wind-chimes.mp3" class="mystical"></audio>
+    <audio src="./public/Musique/error.mp3" class="error"></audio>
+    <audio src="./public/Musique/interface.mp3" class="interface"></audio>
     <section class="section1" id="section1">
         <div class="first-div-Sec">
-            <div class="sound"></div>
+            <div>
+                <audio src="./public/Musique/ROSY ARANGO - La Bruja.mp3" id="bruja" autoplay loop></audio>
+                <div class="sound">
+                    <img src="./public/img/Icones/guitar.png" alt="" class="guitar" id="guitare1">
+                </div>
+                <input type="range" class="volume-control">
+            </div>
         </div>
         <div class="second-div-Sec">
             <div class="menuWindow">
                 <div class="img-title">
-                    <!-- <img src="" alt=""> -->
+                    Memoria De Los Muertos
                 </div>
                 <div>
                 <div class="table">
@@ -24,19 +35,32 @@
                     </div>
                     <div class="table-content">
                         <div class="table-1row">
-                            <div>Points</div>
-                            <div>Pseudo</div>
-                            <div>Mode de jeu</div>
-                            <div>Temps</div>
+                            <div class="tr">Rank</div>
+                            <div class="tr">Pseudo</div>
+                            <div class="tr">Mode de jeu</div>
+                            <div class="tr">Temps</div>
                         </div>
-                        <div class="table-liste"></div>
+                        <div class="table-liste">
+                            <div class="rank">
+                                <div class="none">rank</div>
+                            </div>
+                            <div class="pseudoDiv">
+                                <div class="none">pseudo</div>
+                            </div>
+                            <div class="mode">
+                                <div class="none">mode</div>
+                            </div>
+                            <div class="temps">
+                                <div class="none">100000000000000000000000000</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="secInput">
                     <div class="name-title">
-                        Nouvelle partie?
+                        Pseudo :
                     </div>
-                    <input type="text" class="name-input" placeholder="Ton pseudo?">
+                    <input type="text" class="name-input" placeholder="Señor o señora...">
                 </div>
                 <div class="divCartes">
                     <div class="cartes-title">
@@ -51,29 +75,62 @@
                 </div>
                 <div class="divBtnJouer">
                     <div class="jouer">
-                        <a href="#section2" class="a-jouer">Jouer</a>
+                        Jouer
                     </div>
                 </div>
             </div>
         </div>
+        <div class="candles">
+            <img src="./public/img/Backgrounds/candles.png" alt="">
+        </div>
+        <div class="candle2">
+            <img src="./public/img/Backgrounds/candles2.png" alt="">
+        </div>
+        <div class="holder">
+            <div class="candle">
+              <div class="blinking-glow"></div>
+              <div class="thread"></div>
+              <div class="glow"></div>
+              <div class="flame"></div>
+            </div>
+          </div>
         <div class="third-div-Sec">
             <div></div>
+        </div>
+        <div class="modalPseudo">
+            <div class="modal-contentPseudo">
+                <p class="texteModalPseudo">Il faut choisir un pseudo !</p>
+                <div class="btnModalPseudo">
+                    OK
+                </div>
+            </div>
+        </div>
+        <div class="modalMode">
+            <div class="modal-contentMode">
+                <p class="texteModalMode">Il faut choisir un mode de jeu !</p>
+                <div class="btnModalMode">
+                    OK
+                </div>
+            </div>
         </div>
     </section>
     <section class="section2" id="section2">
         <div class="first-div-Sec2">
-            <div class="sound2"></div>
+            <div>
+                <div class="sound2">
+                    <img src="./public/img/Icones/guitar.png" alt="" class="guitar" id="guitare2">
+                </div>
+                <input type="range" class="volume-control">
+            </div>
             <div class="exit">
-                <a href="#section1">
-                    <i class="fa-solid fa-door-open"></i>
-                </a>
+                <img src="./public/img/Icones/doors.png" alt="" class="doors">
             </div>
         </div>
         <div class="second-div-Sec2">
             <div class="board">
                 <div class="pseudo">pseudo</div>
-                <div>timer</div>
-                <div>paires</div>
+                <div class="timer">0s</div>
+                <div class="pairesText">paires</div>
             </div>
             <div class="menuWindow3">
                 <div class="card">
@@ -302,6 +359,14 @@
         </div>
         <div class="third-div-Sec2">
             <div></div>
+        </div>
+        <div class="modalWin">
+            <div class="modal-content">
+                <p class="texteModal">Félicitations !</p>
+                <div class="btnModalWin">
+                    Retour
+                </div>
+            </div>
         </div>
     </section>
     <script src="./public/js/main.js"></script>

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: mexicana;
+    src: url(../fonts/Mexicana.ttf);
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -72,10 +77,27 @@ body {
 .sound {
     height: 80px;
     width: 80px;
-    background-color: rgb(131, 6, 227);
+    background-color: rgba(168, 6, 227, 0.512);
     border-radius: 10px;
-    border: 3px solid white;
+    border: 3px solid rgb(0, 0, 0);
     margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.volume-control {
+    display: none;
+}
+
+.volume-active {
+    display: block;
+}
+
+.guitar {
+    width: 65px;   
+    height: 65px;   
 }
 
 .first-div-Sec {
@@ -102,17 +124,41 @@ body {
     margin-top: 70px;
     width: 65%;
     height: 85%;
-    background-color: rgb(131, 6, 227);
+    background-color: rgba(1, 23, 23, 0.512);
     border-radius: 10px;
-    border: 3px solid white;
+    border: 5px solid rgba(0, 0, 0);
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
+}
+
+.candles {
+    position: absolute;
+    top: 455px;
+    left: 470px;
+    width: 200px;
+    height: 300px;
+}
+
+.candle2 {
+    position: absolute;
+    top: 370px;
+    left: 1000px;
+    width: 200px;
+    height: 365px;
 }
 
 .img-title {
     height: 20%;
     width: 100px;
+    font-family: mexicana;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    color: rgb(227, 197, 6);
+    text-align: center;
+    margin-top: 10px;
 }
 
 .table {
@@ -123,7 +169,7 @@ body {
     align-items: center;
     font-size: 20px;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .table-title {
@@ -135,15 +181,66 @@ body {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid black;
     border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.512);
+}
+
+.table-liste {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    height: 90px;
+    background-color: rgba(168, 6, 227, 0.512);
+}
+
+.table-liste::-webkit-scrollbar {
+    width: 8px;
+}
+.table-liste::-webkit-scrollbar-track {
+    background-color: rgba(168, 6, 227, 0.512);
+}
+.table-liste::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 17px;
+}
+
+.tr {
+    width: 25%;
+    text-align: center;
+}
+
+.rank {
+    width: 25%;
+    text-align: center;
+}
+.pseudoDiv {
+    width: 25%;
+    text-align: center;
+}
+.mode {
+    width: 25%;
+    text-align: center;
+}
+.temps {
+    width: 25%;
+    text-align: center;
+}
+
+.none {
+    display: none;
 }
 
 .table-content {
     width: 100%;
     height: 100px;
-    border: 3px solid white;
+    border: 3px solid black;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .secInput {
@@ -162,16 +259,17 @@ body {
 }
 
 .name-input {
-    width: 45%;
+    width: 65%;
     height: 65px;
     border-radius: 15px;
-    border: none;
+    border: 3px solid black;
     font-size: 25px;
     outline: none;
-    color: rgb(131, 6, 227);
+    color: white;
+    background-color: rgba(168, 6, 227, 0.512);
 }
 .name-input::placeholder {
-    color: rgb(131, 6, 227);
+    color: white;
 }
 
 .divCartes {
@@ -192,24 +290,32 @@ body {
 .choix-paires {
     display: flex;
     gap: 15px;
-    /* background-color: rgb(131, 6, 227);
-    filter: brightness(100px); */
-    width: 160px;
+    width: 300px;
     height: 30px;
 }
 
 .paires {
-    background-color: rgb(131, 6, 227);
-    width: 25px;
-    height: 25px;
-    border: 2px solid white;
+    background-color: rgba(168, 6, 227, 0.512);
+    width: 75px;
+    height: 40px;
+    /* border: 3px solid black; */
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     color: white;
+    font-size: 25px
 }
+
+.active {
+    box-shadow: rgb(168, 6, 227) 0px 54px 55px, rgb(168, 6, 227) 0px -12px 30px, rgb(168, 6, 227) 0px 4px 6px, rgb(168, 6, 227) 0px 12px 13px, rgb(168, 6, 227) 0px -3px 5px;
+    border: 3px solid black;
+}   
+.active2 {
+    box-shadow: rgb(168, 6, 227) 0px 54px 55px, rgb(168, 6, 227) 0px -12px 30px, rgb(168, 6, 227) 0px 4px 6px, rgb(168, 6, 227) 0px 12px 13px, rgb(168, 6, 227) 0px -3px 5px;
+    border: 3px solid black;
+}   
 
 .divBtnJouer {
     width: 100%;
@@ -221,10 +327,10 @@ body {
 }
 
 .jouer {
-    background-color: rgb(131, 6, 227);
+    background-color: rgba(168, 6, 227, 0.512);
     color: white;
     font-size: 25px;
-    border: 3px solid white;
+    border: 3px solid black;
     border-radius: 10px;
     width: 160px;
     height: 75%;
@@ -308,18 +414,20 @@ body {
 .sound2 {
     height: 80px;
     width: 80px;
-    background-color: rgb(131, 6, 227);
+    background-color: rgba(168, 6, 227, 0.512);
     border-radius: 10px;
-    border: 3px solid white;
+    border: 3px solid black;
     margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .first-div-Sec2 {
     width: 18%;
     height: 100%;
-    /* background-color: yellow; */
     display: flex;
-    /* justify-content: flex-end; */
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
@@ -327,7 +435,6 @@ body {
 .second-div-Sec2 {
     width: 64%;
     height: 100%;
-    /* background-color: green; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -336,15 +443,12 @@ body {
 .third-div-Sec2 {
     width: 18%;
     height: 100%;
-    /* background-color: red; */
 }
 
 .menuWindow3 {
     width: 100%;
     height: 80%;
-    /* background-color: rgb(131, 6, 227); */
     border-radius: 10px;
-    /* border: 3px solid white; */
     display: none;
     justify-content: center;
     align-items: center;
@@ -354,9 +458,7 @@ body {
 .menuWindow4 {
     width: 100%;
     height: 80%;
-    /* background-color: rgb(131, 6, 227); */
     border-radius: 10px;
-    /* border: 3px solid white; */
     display: none;
     justify-content: center;
     align-items: center;
@@ -366,9 +468,7 @@ body {
 .menuWindow5 {
     width: 100%;
     height: 80%;
-    /* background-color: rgb(131, 6, 227); */
     border-radius: 10px;
-    /* border: 3px solid white; */
     display: none;
     justify-content: center;
     align-items: center;
@@ -378,9 +478,7 @@ body {
 .menuWindow6 {
     width: 100%;
     height: 80%;
-    /* background-color: rgb(131, 6, 227); */
     border-radius: 10px;
-    /* border: 3px solid white; */
     display: none;
     justify-content: center;
     align-items: center;
@@ -391,9 +489,9 @@ body {
 .exit {
     height: 100px;
     width: 100px;
-    background-color: rgb(131, 6, 227);
+    background-color: rgba(168, 6, 227, 0.512);
     border-radius: 10px;
-    border: 3px solid white;
+    border: 3px solid black;
     margin-bottom: 70px;
     display: flex;
     justify-content: center;
@@ -413,16 +511,19 @@ body {
     align-items: center;
     color: white;
     font-size: 25px;
-    background-color: rgb(131, 6, 227);
-    border: 3px solid white;
+    background-color: rgba(168, 6, 227, 0.512);
+    border: 3px solid black;
     border-radius: 10px;
 }
 
 .card {
     width: 140px;
     height: 200px;
-    background-color: rgb(131, 6, 227);
-    border: 2px solid white;
+    background-image: url(/Javascript/DOM/Projets/Memory_emrah_oztek/public/img/Cards/hearth-skull.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid black;
     border-radius: 5px;
     cursor: pointer;
     position: relative;
@@ -439,7 +540,7 @@ body {
 }
 
 .card__face--front {
-    background: rgb(131, 6, 227);
+ 
   }
 
 .card_face--back {
@@ -461,3 +562,324 @@ img {
 .card.matched {
     transform: translateX(-100%) rotateY(-180deg);
 }
+
+.doors {
+    width: 80px;
+    height: 80px;
+}
+
+/* modal Win */
+.modalWin {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: auto; */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    width: 45%;
+    height: 38%;
+    background-color: rgb(104, 5, 140);
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    border-radius: 10px;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.texteModal {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.btnModalWin {
+    background-color: rgb(104, 5, 140);
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+}
+
+/* fin modal */
+
+/* modal pseudo */
+.modalPseudo {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: auto; */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-contentPseudo {
+    width: 45%;
+    height: 38%;
+    background-color: rgb(104, 5, 140);
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    border-radius: 10px;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.texteModalPseudo {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.btnModalPseudo {
+    background-color: rgb(104, 5, 140);
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+}
+
+/* fin modal Pseudo */
+
+/* modal mode */
+.modalMode {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: auto; */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-contentMode {
+    width: 45%;
+    height: 38%;
+    background-color: rgb(104, 5, 140);
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    border-radius: 10px;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.texteModalMode {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.btnModalMode {
+    background-color: rgb(104, 5, 140);
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+}
+
+/* fin modal Mode */
+
+/* code utilisé pour la bougie animée  */
+/* https://codepen.io/kh-mamun/pen/YLGjvx */
+
+.holder {
+    margin: 12rem auto 0;
+    width: 150px;
+    height: 370px;
+    position: absolute;
+    top: 180px;
+    left: 360px;
+  }
+  
+  .holder *, .holder *:before, .holder *:after {
+    position: absolute;
+    content: "";
+  }
+  
+  .candle {
+    bottom: 0;
+    width: 150px;
+    height: 300px;
+    border-radius: 150px / 40px;
+    box-shadow: inset 20px -30px 50px 0 rgba(0, 0, 0, 0.4), inset -20px 0 50px 0 rgba(0, 0, 0, 0.4);
+    background: #190f02;
+    background: -moz-linear-gradient(#e48825, #e78e0e, #833c03, #4c1a03 50%, #1c0900);
+    background: -webkit-linear-gradient(#e48825, #e78e0e, #833c03, #4c1a03 50%, #1c0900);
+    background: -o-linear-gradient(#e48825, #e78e0e, #833c03, #4c1a03 50%, #1c0900);
+    background: -ms-linear-gradient(#e48825, #e78e0e, #833c03, #4c1a03 50%, #1c0900);
+    background: linear-gradient(#e48825, #e78e0e, #833c03, #4c1a03 50%, #1c0900);
+  }
+  
+  .candle:before {
+    width: 100%;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #d47401;
+    background: #b86409;
+    background: -moz-radial-gradient(#eaa121, #8e4901 45%, #b86409 80%);
+    background: -webkit-radial-gradient(#eaa121, #8e4901 45%, #b86409 80%);
+    background: -o-radial-gradient(#eaa121, #8e4901 45%, #b86409 80%);
+    background: -ms-radial-gradient(#eaa121, #8e4901 45%, #b86409 80%);
+    background: radial-gradient(#ffef80, #b86409 60%);
+    background: radial-gradient(#eaa121, #8e4901 45%, #b86409 80%);
+  }
+  
+  .candle:after {
+    width: 34px;
+    height: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    top: 14px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    background: -moz-radial-gradient(rgba(0, 0, 0, 0.6), transparent 45%);
+    background: -webkit-radial-gradient(rgba(0, 0, 0, 0.6), transparent 45%);
+    background: -o-radial-gradient(rgba(0, 0, 0, 0.6), transparent 45%);
+    background: -ms-radial-gradient(rgba(0, 0, 0, 0.6), transparent 45%);
+    background: radial-gradient(rgba(0, 0, 0, 0.6), transparent 45%);
+  }
+  
+  .thread {  
+    width: 6px;
+    height: 36px;
+    top: -17px;
+    left: 50%;
+    z-index: 1;
+    border-radius: 40% 40% 0 0;
+    transform: translateX(-50%);
+    background: #121212;
+    background: -moz-linear-gradient(#d6994a, #4b232c, #121212, black, #e8bb31 90%);
+    background: -webkit-linear-gradient(#d6994a, #4b232c, #121212, black, #e8bb31 90%);
+    background: -o-linear-gradient(#d6994a, #4b232c, #121212, black, #e8bb31 90%);
+    background: -ms-linear-gradient(#d6994a, #4b232c, #121212, black, #e8bb31 90%);
+    background: linear-gradient(#d6994a, #4b232c, #121212, black, #e8bb31 90%);
+  }
+  
+  .flame {
+    width: 24px;
+    height: 120px;
+    left: 50%;
+    transform-origin: 50% 100%;
+    transform: translateX(-50%);
+    bottom: 100%;
+    border-radius: 50% 50% 20% 20%;
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(white 80%, transparent);
+    background: -webkit-linear-gradient(white 80%, transparent);
+    background: -o-linear-gradient(white 80%, transparent);
+    background: -ms-linear-gradient(white 80%, transparent);
+    background: linear-gradient(white 80%, transparent);
+    animation: moveFlame 6s linear infinite, enlargeFlame 5s linear infinite;
+  }
+  
+  .flame:before {
+    width: 100%;
+    height: 100%;
+    border-radius: 50% 50% 20% 20%;
+    box-shadow: 0 0 15px 0 rgba(247, 93, 0, .4), 0 -6px 4px 0 rgba(247, 128, 0, .7);
+  }
+  
+  @keyframes moveFlame {
+    0%, 100% {
+      transform: translateX(-50%) rotate(-2deg);
+    }
+    50% {
+      transform: translateX(-50%) rotate(2deg);
+    }
+  }
+  
+  @keyframes enlargeFlame {
+    0%, 100% {
+      height: 120px;
+    }
+    50% {
+      height: 140px;
+    }
+  }
+  
+  .glow {
+    width: 26px;
+    height: 60px;
+    border-radius: 50% 50% 35% 35%;
+    left: 50%;
+    top: -48px;
+    transform: translateX(-50%);
+    background: rgba(0, 133, 255, .7);
+    box-shadow: 0 -40px 30px 0 #dc8a0c, 0 40px 50px 0 #dc8a0c, inset 3px 0 2px 0 rgba(0, 133, 255, .6), inset -3px 0 2px 0 rgba(0, 133, 255, .6);
+  }
+  
+  .glow:before {
+    width: 70%;
+    height: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.35);
+  }
+  
+  .blinking-glow {
+    width: 100px;
+    height: 180px;
+    left: 50%;
+    top: -55%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: #ff6000;
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(60px);
+    -o-filter: blur(60px);
+    -ms-filter: blur(60px);
+    filter: blur(60px);
+    animation: blinkIt .1s infinite;
+  }
+  
+  @keyframes blinkIt {
+    50% { opacity: .8;}
+  }
+  
