@@ -599,9 +599,10 @@ img {
 }
 
 .texteModal {
-    font-size: 25px;
-    color: white;
+    font-size: 50px;
+    color: rgb(227, 197, 6);;
     font-weight: bold;
+    font-family: mexicana;
 }
 
 .btnModalWin {
